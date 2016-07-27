@@ -241,12 +241,18 @@
 
 @media screen and (max-width: 350px) {
 	.ftyb {
-		font-size: 12px;
+		font-size: 14px;
+	}
+	.ybft {
+		height: 100vh;
 	}
 }
 
-@media screen and (max-height: 420px) {
+@media screen and (max-height: 500px) {
 	.ftyb {
-		font-size: 12px;
+		font-size: 14px;
+	}
+	.ybft {
+		height: 100vh;
 	}
 }
