@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+/*Background Image*/
+.bg img {
+	height: 100vh;
+	width: 100%;
+	display: block;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+	.bg {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 420px) {
+	.bg {
+		display: none;
+	}
+}
+/*Global Styles*/
+.paragraph {
+ 	margin: 8% 10%;
+}
+
+.main {
+	overflow-x: hidden;
+}
+
+/*About Page*/
+.abouttitle {
+	background: url(images/elaine.JPG) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.abouttitle img {
+	max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.abouttitle:hover, .portfoliotitle:hover, .contacttitle:hover {
+	opacity: 0.9;
+	transition: 1.5s;
+}
+
+/*Portfolio Page*/
+.portfoliotitle {
+	background: url(images/orange.gif) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.portfoliotitle img, .selection img {
+	max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.selection {
+	height: 50vh;
+}
+
+#yb {
+	background: url(images/cover.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#yb:hover {
+	opacity: 0.8;
+}
+
+#more {
+	background-color: #4d4d4d;
+	position: relative;
+}
+
+#comingsoon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	padding-top: 50px;
+	margin-bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+	background-color: white;
+}
+
+#more:hover #comingsoon {
+  visibility: visible;
+	transition: 2s;
+  opacity: 0.9;
+}
+
+/*Yearbook Page*/
+.yearbookcover {
+	height: 100vh;
+	background: url(images/outside.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.yearbookcover img {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.yearbookinner {
+	height: 100vh;
+	background: url(images/inside.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+	.yearbookinner {
+		display: none;
+	}
+	.yearbookcover {
+		display: none;
+	}
+	.slide {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 420px) {
+	.yearbookinner {
+		display: none;
+	}
+	.yearbookcover {
+		display: none;
+	}
+	.slide {
+		display: none;
+	}
+}
+
+.ybft {
+	height: 50vh;
+}
+
+#feature1 {
+	background: url(images/flip.gif) no-repeat center center;
+	background-size: cover;
+}
+
+#feature2 {
+	background: url(images/run.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#feature3 {
+	background: url(images/cover.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.paragraph1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+	background-color: white;
+}
+
+#feature1:hover .paragraph1, #feature2:hover .paragraph1, #feature3:hover .paragraph1 {
+  visibility: visible;
+	transition: 1s;
+  opacity: 0.8;
+}
+
+
+/*Contact Page*/
+.contacttitle {
+	height: 100vh;
+	background: url(images/orange.gif) no-repeat center center;
+	background-size: cover;
+}
+
+.contacttitle img {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#link:hover {
+	transition: 0.5s;
+	color: #ff9933;
+	text-decoration: none;
+}
+
+.paragraph1 {
+	padding: 5% 10%;;
+}
+
+.ftyb {
+	font-size: 18px;
+}
+
+@media screen and (max-width: 920px) {
+	.ftyb {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-height: 420px) {
+	.ftyb {
+		font-size: 16px;
+	}
+}
