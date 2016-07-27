@@ -242,6 +242,7 @@
 @media screen and (max-width: 350px) {
 	.ybft {
 		height: 100vh;
+		font-size: 18px;
 	}
 	.selection {
 		height: 100vh;
@@ -251,6 +252,7 @@
 @media screen and (max-height: 500px) {
 	.ybft {
 		height: 100vh;
+		font-size: 18px;
 	}
 	.selection {
 		height: 100vh;
