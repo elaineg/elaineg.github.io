@@ -239,6 +239,12 @@
 	}
 }
 
+@media screen and (max-width: 350px) {
+	.ftyb {
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-height: 420px) {
 	.ftyb {
 		font-size: 16px;
