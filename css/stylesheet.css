@@ -298,10 +298,11 @@ body {
 @media screen and (max-width: 660px) {
     #ptposter {
 			background-size: auto;
-			height: 75vh;
+			background-attachment: scroll;
 		}
 		#ntanpage {
 			height: 50vh;
+			background-attachment: scroll;
 		}
 }
 
