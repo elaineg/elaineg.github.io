@@ -20,12 +20,47 @@
 	}
 }
 /*Global Styles*/
+body {
+    font-family: "Nunito", sans-serif;
+}
+
 .paragraph {
  	margin: 8% 10%;
 }
 
+.paragraph2 {
+    margin: 5% 6%;
+}
 .main {
 	overflow-x: hidden;
+}
+
+#back span {
+    position: fixed;
+    z-index: 10; 
+    font-size: 30px;
+    color: #4d4d4d;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+#back span:hover {
+    color: #ff9933;
+    transition: 1s;
+}
+
+#back1 span {
+    position: fixed;
+    z-index: 10; 
+    font-size: 30px;
+    color: rgb(255, 230, 206);
+    margin: 5px;
+    margin-top: 20px;
+}
+
+#back1 span:hover {
+    color: #4d4d4d;
+    transition: 1s;
 }
 
 /*About Page*/
@@ -55,7 +90,7 @@
 
 /*Portfolio Page*/
 .portfoliotitle {
-	background: url(images/orange.gif) no-repeat center center;
+	background: url(images/butterfly.jpg) no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 }
@@ -77,38 +112,31 @@
 	height: 50vh;
 }
 
+.selection:hover {
+	opacity: 0.8;
+}
+
 #yb {
 	background: url(images/cover.jpg) no-repeat center center;
 	background-size: cover;
 }
 
-#yb:hover {
-	opacity: 0.8;
+
+#awards {
+    background: url(images/orange.gif) no-repeat center center;
+    background-size: cover;
+}
+
+#ptpost {
+    background: url(images/ptp.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 #more {
-	background-color: #4d4d4d;
+	background-color: #417b10;
 	position: relative;
 }
 
-#comingsoon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-	padding-top: 50px;
-	margin-bottom: 0;
-  visibility: hidden;
-  opacity: 0;
-	background-color: white;
-}
-
-#more:hover #comingsoon {
-  visibility: visible;
-	transition: 2s;
-  opacity: 0.9;
-}
 
 /*Yearbook Page*/
 .yearbookcover {
@@ -198,6 +226,70 @@
   opacity: 0.8;
 }
 
+/*More, Award Page*/
+
+#moretitle, #awardtitle {
+    position: fixed;
+    height: 100vh;
+    background: url(images/orange.gif) no-repeat center center;
+    background-size: cover;
+    z-index:1;
+}
+
+
+@media screen and (max-width: 768px) {
+    #moretitle, #awardtitle {
+        position: static;
+    }
+    .placeholder {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #moretitle, #awardtitle {
+        position: static;
+    }
+    .placeholder {
+        display: none;
+    }
+}
+
+#moretitle img, #awardtitle img, #ptposter img {
+    max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#websites, #summer {
+    background-color: dimgray;
+}
+
+
+/*Pinetree Post Page*/
+
+#ptposter {
+    height: 100vh;
+    background: url(images/ptp.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+}
+
+#ntanpage {
+    height: 100vh;
+    background: url(images/ntanpage.png) no-repeat center center;
+    background-size: contain;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
 
 /*Contact Page*/
 .contacttitle {
