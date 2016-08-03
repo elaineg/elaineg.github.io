@@ -37,7 +37,7 @@ body {
 
 #back span {
     position: fixed;
-    z-index: 10; 
+    z-index: 10;
     font-size: 30px;
     color: #4d4d4d;
     margin: 20px;
@@ -51,7 +51,7 @@ body {
 
 #back1 span {
     position: fixed;
-    z-index: 10; 
+    z-index: 10;
     font-size: 30px;
     color: rgb(255, 230, 206);
     margin: 5px;
@@ -276,19 +276,43 @@ body {
 /*Pinetree Post Page*/
 
 #ptposter {
-    height: 100vh;
+		height: 100vh;
     background: url(images/ptp.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 #ntanpage {
-    height: 100vh;
+		height: 100vh;
     background: url(images/ntanpage.png) no-repeat center center;
     background-size: contain;
     background-attachment: fixed;
     overflow-x: hidden;
+}
+
+#ntanpage:hover {
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 660px) {
+    #ptposter {
+			background-size: auto;
+			height: 75vh;
+		}
+		#ntanpage {
+			height: 50vh;
+		}
+}
+
+@media screen and (max-height: 400px) {
+    #ptposter {
+			height: 75vh;
+			background-size: auto;
+		}
+		#ntanpage {
+			height: 50vh;
+		}
 }
 
 /*Contact Page*/
