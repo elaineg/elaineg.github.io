@@ -38,7 +38,7 @@ body {
 #back span {
     position: fixed;
     z-index: 10;
-    font-size: 30px;
+    font-size: 24px;
     color: #4d4d4d;
     margin: 20px;
     margin-top: 20px;
@@ -52,7 +52,7 @@ body {
 #back1 span {
     position: fixed;
     z-index: 10;
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(255, 230, 206);
     margin: 5px;
     margin-top: 20px;
@@ -61,6 +61,54 @@ body {
 #back1 span:hover {
     color: #4d4d4d;
     transition: 1s;
+}
+
+.nextpage span {
+	position: fixed;
+	z-index: 10;
+	font-size: 24px;
+	color: rgb(255, 230, 206);
+	margin: 5px;
+	margin-top: 55px;
+}
+
+.backpage span {
+	position: fixed;
+	z-index: 10;
+	font-size: 24px;
+	color: rgb(255, 230, 206);
+	margin: 5px;
+	margin-top: 85px;
+	margin-left: 7px;
+}
+
+.nextpage span:hover, .backpage span:hover {
+    color: #4d4d4d;
+    transition: 1s;
+}
+
+.nextpage2 span:hover, .backpage2 span:hover {
+    color: #ff9933;
+    transition: 1s;
+}
+
+.nextpage2 span {
+	position: fixed;
+	z-index: 10;
+	font-size: 24px;
+	color: #4d4d4d;
+	margin: 20px;
+	margin-top: 55px;
+}
+
+.backpage2 span {
+	position: fixed;
+	z-index: 10;
+	font-size: 24px;
+	color: #4d4d4d;
+	margin: 20px;
+	margin-top: 85px;
+	margin-left: 22px;
 }
 
 /*About Page*/
