@@ -337,7 +337,11 @@ body {
 	margin: auto;
 }
 
-#link:hover {
+#link2 {
+	color: white;
+}
+
+#link:hover, #link2:hover {
 	transition: 0.5s;
 	color: #ff9933;
 	text-decoration: none;
