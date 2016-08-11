@@ -302,15 +302,6 @@ body {
     }
 }
 
-@media screen and (max-height: 500px) {
-    #moretitle, #awardtitle {
-        position: static;
-    }
-    .placeholder {
-        display: none;
-    }
-}
-
 #moretitle img, #awardtitle img, #ptposter img {
     max-height: 100%;
   max-width: 100%;
@@ -363,15 +354,6 @@ body {
 		}
 }
 
-@media screen and (max-height: 400px) {
-    #ptposter {
-			height: 75vh;
-			background-size: auto;
-		}
-		#ntanpage {
-			height: 50vh;
-		}
-}
 
 /*Contact Page*/
 .contacttitle {
