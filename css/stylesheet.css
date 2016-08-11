@@ -138,7 +138,7 @@ body {
 
 /*Portfolio Page*/
 .portfoliotitle {
-	background: url(images/butterfly.jpg) no-repeat center center;
+	background: url(images/butterfly.png) no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 }
