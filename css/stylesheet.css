@@ -161,7 +161,8 @@ body {
 }
 
 .selection:hover {
-	opacity: 0.8;
+	opacity: 0.3;
+	transition: 0.5s;
 }
 
 #yb {
@@ -226,7 +227,7 @@ body {
 	}
 }
 
-@media screen and (max-height: 420px) {
+@media screen and (max-height: 300px) {
 	.yearbookinner {
 		display: none;
 	}
