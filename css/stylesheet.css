@@ -268,7 +268,12 @@ body {
 	background-color: white;
 }
 
-#feature1:hover .paragraph1, #feature2:hover .paragraph1, #feature3:hover .paragraph1 {
+#feature1:hover .paragraph1,
+#feature1:focus .paragraph1,
+#feature2:hover .paragraph1,
+#feature2:focus .paragraph1,
+#feature3:hover .paragraph1,
+#feature3:focus .paragraph1 {
   visibility: visible;
 	transition: 1s;
   opacity: 0.8;
