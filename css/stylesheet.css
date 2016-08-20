@@ -8,7 +8,7 @@
 	overflow-x: hidden;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	.bg {
 		display: none;
 	}
@@ -215,7 +215,7 @@ body {
 	background-attachment: fixed;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.yearbookinner {
 		display: none;
 	}
@@ -294,7 +294,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #moretitle, #awardtitle {
         position: static;
     }
@@ -344,7 +344,7 @@ body {
 	transition: 2s;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
     #ptposter {
 			background-size: auto;
 			background-attachment: scroll;
