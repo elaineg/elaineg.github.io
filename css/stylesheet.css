@@ -113,7 +113,7 @@ body {
 
 /*About Page*/
 .abouttitle {
-	background: url(images/elaine.JPG) no-repeat left center;
+	background: url(images/elaine.JPG) no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 }
