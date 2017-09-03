@@ -2,265 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="I am a front-end web and layout designer. This is my portfolio.">
+    <meta name="description" content="I am Commerce student from Queen's University. I design websites and study fintech.">
     <meta name="author" content="Elaine Gao">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="css/images/favicon.png">
     <link rel="shortcut icon"
       type="image/png"
-      href="css/images/faviconsm.png">
-    <title>Elaine Gao | Designer</title>
+      href="css/images/favicon.png">
+    <title>Elaine Gao</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-82629041-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
   </head>
 
-  <!-- Nav Styles -->
-  <style>
-
-body {
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-}
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #ff9933;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 40px !important;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .closebtn {
-    font-size: 20px !important;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .overlay a {font-size: 20px}
-  .closebtn {
-    font-size: 20px !important;
-    top: 15px;
-    right: 35px;
-  }
-}
-/*Nav Styles*/
-
-/*Loader Styles*/
-/* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 95%;
-  z-index: 2;
-  margin: -65px auto;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-    animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@media screen and (max-width: 900px) {
-  #loader {
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    z-index: 2;
-    margin: -75px auto;
-    margin-left: 0;
-    width: 50px;
-    height: 50px;
-    background-color: darkorange;
-    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-      animation: sk-rotateplane 1.2s infinite ease-in-out;
-  }
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-  } 50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-  } 100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-}
-
-</style>
-<!-- Loader -->
-<body  onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
-
-  <!-- Nav Overlay-->
-  <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="glyphicon glyphicon-remove"></span></a>
-  <div class="overlay-content">
-    <a href="#about">ABOUT</a>
-    <a href="#portfolio">PORTFOLIO</a>
-    <a href="#contact">CONTACT</a>
-    <a href="http://elainegao.com/blog">BLOG</a>
-  </div>
-</div>
-
-<span style="font-size:40px;
-cursor:pointer;
-z-index:9;
-position:fixed;
-margin-top: 30px;
-margin-left: 30px;
-color: white;" onclick="openNav()" class="glyphicon glyphicon-menu-hamburger"></span>
 
   <!-- Background -->
-  <div class="bg">
-    <img src="css/images/elaineelaine.gif" alt="Hi, I'm Elaine.">
-  </div>
-<div style="display:none;" id="myDiv" class="animate-bottom main">
-  <!-- About Page -->
-  <div class="page" id="about">
-    <div class="row">
-    <a onclick="closeNav()" href="#about"><div class="abouttitle col-sm-6" title="Photo by Henry Liu">
-      <img src="css/images/About.png" alt="About Me">
-    </div></a>
-    <div class="aboutwriteup col-sm-6">
-      <article style="margin: 10%; margin-bottom: 5%;">
-        <h1>It's nice to meet you.</h1>
-        <p style="font-size:18px;">I live in Canada. I spend most of my time reading clickbait articles from Facebook, but sometimes I design web and print layouts.</p>
-        <p style="text-align: center; font-size:1.8em;">These are my skills:</p>
-        <img src="css/images/Skillgraphic.png" style="margin: auto; display: block; height: auto; max-width:100%;">
-      </article>
-    </div>
-  </div>
-  </div>
-  <!-- Portfolio Page -->
-  <div class="page" id="portfolio">
-    <div class="row">
-    <span onclick="closeNav()"><div class="portfoliotitle col-sm-6" title="Photo taken by me">
-      <img src="css/images/Portfolio.png" alt="My Portfolio">
-    </div></span>
-    <a href="awards.html"><div class="selection col-md-3 col-sm-6" id="awards">
-        <img src="css/images/awards.png" alt="Awards">
-    </div></a>
-    <a href="yearbook.html" onclick="closeNav()"><div class="selection col-md-3 col-sm-6" id="yb">
-      <img src="css/images/yearbooksm.png" alt="Yearbook">
-    </div></a>
-    <a href="ptpost.html"><div class="selection col-md-3 col-sm-6" id="ptpost">
-        <img src="css/images/magazine.png" alt="School Magazine">
-    </div></a>
-    <a href ="more.html"><div class="selection col-md-3 col-sm-6" id="more">
-        <img src="css/images/more.png" alt="Miscellaneous">
-    </div></a>
-  </div><!-- row -->
-  </div>
-
-
-  <!-- Contact Page -->
-  <div class="page" id="contact">
-    <div class="row">
-      <div class="col-sm-6 contacttitle">
-        <img src="css/images/Contact.png" alt="contact information">
+  <header class="bg">
+    <div class="landing-page">
+       <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+            <img src="css/images/eg-logo-white.png">
+            </div>
+        </div>
+        <div class="row masthead">
+            <div class="col-lg-12 mx-auto">
+                <h1>Hi! I'm Elaine.</h1>
+                <h6>Designer, Product Manager, Learner.</h6><br>
+                <a class="btn btn-outline-secondary" href="portfolio.html">Show me more</a>
+            </div>
+        </div>
       </div>
-      <div class="col-sm-6 contactinfo">
-        <article class="paragraph">
-        <h1>It was nice to meet you.</h1>
-        <p style="font-size: 18px;">I can design beautiful layouts and websites for you. Send me an email and let's get started.
-        </article>
-        <article class="paragraph">
-        <h2>Elaine Gao</h2>
-          <p><a href="mailTo:bright.orange@outlook.com" style="color: #4d4d4d; text-decoration:none; font-size: 18px;"><span id="link">bright.orange@outlook.com</span></a>
-            <p>&copy; All rights reserved.</p>
-          </article>
       </div>
-    </div>
-  </div>
-
-
-</div><!-- main -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-  </body>
-</html>
+  
+<!--- footer ---> 
+ <div class="footer">
+     <div class="row">
+         <div class="col-lg-12 mx-auto">
+             <a href="https://www.linkedin.com/in/elaineyngao"><img class="img-fluid img-centered" src="css/images/landing-page-logos/005-linkedin-logo-button.png"></a>
+             <a href="https://twitter.com/elaineyngao"><img class="img-fluid img-centered" src="css/images/landing-page-logos/004-twitter-logo-button.png"></a>
+             <a href="https://dribbble.com/elainegao"><img class="img-fluid img-centered" src="css/images/landing-page-logos/006-dribble-logo-button.png"></a>
+             <a href="mailTo:e.gao@queensu.ca"><img class="img-fluid img-centered" src="css/images/landing-page-logos/002-email.png"></a>
+         </div>
+     </div>
+ </div>
+    </header>
+  
