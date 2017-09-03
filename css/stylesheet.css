@@ -156,7 +156,7 @@ h2, h5 {
   background-color: transparent;
 }
 
-.portfolio-item:hover, .portfolio-item:fo .overlay {
+.portfolio-item:hover, .portfolio-item:focus .overlay {
   opacity: 1;
 }
 
