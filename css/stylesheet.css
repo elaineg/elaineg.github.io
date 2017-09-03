@@ -138,7 +138,7 @@ h2, h5 {
     cursor: pointer; }
 
 
-.portfolio-item:hover img .portfolio-item:focus img {
+.portfolio-item:hover img, .portfolio-item:focus img {
     opacity: 0.1;
     transition: 0.4s ease;
 }
@@ -156,7 +156,7 @@ h2, h5 {
   background-color: transparent;
 }
 
-.portfolio-item:hover, .portfolio-item:focus .overlay {
+.portfolio-item:hover, .portfolio-item:fo .overlay {
   opacity: 1;
 }
 
