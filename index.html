@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   </head>
 
+<<<<<<< HEAD
 
   <!-- Background -->
   <header class="bg">
@@ -34,6 +35,232 @@
             </div>
         </div>
       </div>
+=======
+  <!-- Nav Styles -->
+  <style>
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff9933;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 20px !important;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 20px !important;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*Nav Styles*/
+
+/*Loader Styles*/
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  z-index: 2;
+  margin: -65px auto;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  #loader {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    z-index: 2;
+    margin: -75px auto;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: darkorange;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+      animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+
+</style>
+<!-- Loader -->
+<body  onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+
+  <!-- Nav Overlay-->
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="glyphicon glyphicon-remove"></span></a>
+  <div class="overlay-content">
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</div>
+
+<span style="font-size:40px;
+cursor:pointer;
+z-index:9;
+position:fixed;
+margin-top: 30px;
+margin-left: 30px;
+color: white;" onclick="openNav()" class="glyphicon glyphicon-menu-hamburger"></span>
+
+  <!-- Background -->
+  <div class="bg">
+    <img src="css/images/elaineelaine.gif" alt="Hi, I'm Elaine.">
+  </div>
+<div style="display:none;" id="myDiv" class="animate-bottom main">
+  <!-- About Page -->
+  <div class="page" id="about">
+    <div class="row">
+    <a onclick="closeNav()" href="#about"><div class="abouttitle col-sm-6">
+      <img src="css/images/About.png" alt="About Me">
+    </div></a>
+    <div class="aboutwriteup col-sm-6">
+      <article style="margin: 10%; margin-bottom: 5%;">
+        <h1>It's nice to meet you.</h1>
+        <p style="font-size:18px;">I live in Canada. Sometimes I design web and print layouts.</p>
+        <p style="text-align: center; font-size:1.8em;">These are my skills:</p>
+        <img src="css/images/Skillgraphic.png" style="margin: auto; display: block; height: auto; max-width:100%;">
+      </article>
+    </div>
+  </div>
+  </div>
+  <!-- Portfolio Page -->
+  <div class="page" id="portfolio">
+    <div class="row">
+    <span onclick="closeNav()"><div class="portfoliotitle col-sm-6" title="Photo taken by me">
+      <img src="css/images/Portfolio.png" alt="My Portfolio">
+    </div></span>
+    <a href="awards.html"><div class="selection col-md-3 col-sm-6" id="awards">
+        <img src="css/images/awards.png" alt="Awards">
+    </div></a>
+    <a href="yearbook.html" onclick="closeNav()"><div class="selection col-md-3 col-sm-6" id="yb">
+      <img src="css/images/yearbooksm.png" alt="Yearbook">
+    </div></a>
+    <a href="ptpost.html"><div class="selection col-md-3 col-sm-6" id="ptpost">
+        <img src="css/images/magazine.png" alt="School Magazine">
+    </div></a>
+    <a href ="more.html"><div class="selection col-md-3 col-sm-6" id="more">
+        <img src="css/images/more.png" alt="Miscellaneous">
+    </div></a>
+  </div><!-- row -->
+  </div>
+
+
+  <!-- Contact Page -->
+  <div class="page" id="contact">
+    <div class="row">
+      <div class="col-sm-6 contacttitle">
+        <img src="css/images/Contact.png" alt="contact information">
+      </div>
+      <div class="col-sm-6 contactinfo">
+        <article class="paragraph">
+        <h1>It was nice to meet you.</h1>
+        <p style="font-size: 18px;">I can design beautiful layouts and websites for you. Send me an email and let's get started.
+        </article>
+        <article class="paragraph">
+        <h2>Elaine Gao</h2>
+          <p><a href="mailTo:e.gao@queensu.ca" style="color: #4d4d4d; text-decoration:none; font-size: 18px;"><span id="link">e.gao@queensu.ca</span></a>
+            <p>&copy; All rights reserved.</p>
+          </article>
+>>>>>>> origin/master
       </div>
   
 <!--- footer ---> 
