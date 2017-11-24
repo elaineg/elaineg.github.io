@@ -156,6 +156,10 @@ h2, h5 {
   background-color: transparent;
 }
 
+.overlayText {
+  text-align: center;
+}
+
 .portfolio-item:hover .overlay, .portfolio-item:focus .overlay {
   opacity: 1;
 }
