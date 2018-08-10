@@ -1,0 +1,181 @@
+/* Landing Page */
+.bg {
+    display: table;
+    padding: 40px;
+    background-color: #F5CA05;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+	height: 100vh;
+	width: 100%;
+	display: block;
+	overflow-x: hidden;
+}
+
+.header {
+  margin: 40px 0 80px 0;
+}
+
+.landing h1 {
+  font-family: "Lora", serif;
+  font-size: 64px;
+}
+
+.landing h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.landing .bold {
+  font-weight:600;
+}
+
+.whiteLink {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #927908;
+}
+
+.whiteLink:hover {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+/* Landing page responsiveness */
+@media only screen and (max-width: 767px) {
+  .bg {
+    padding: 20px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .landing h1 {
+    font-size: 36px;
+  }
+
+  .landing h6 {
+    font-size: 24px;
+  }
+
+  .whiteLink {
+    font-size: 24px;
+  }
+}
+
+/* Navbar styles */
+.navbar-brand img {
+    width: 3.5em;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+.navbar-nav {
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+}
+
+/* Body */
+.row {
+  margin: 50px 0 0 0;
+}
+.title h2 {
+  text-align: center;
+  padding: 20px 0 30px 0;
+  font-family: "Lora", serif;
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 24px;
+  text-align: center;
+}
+
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #F5CA05;
+}
+
+.content li {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.titlebox {
+  background-color: #F5CA05;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contentbox {
+  border: solid #F5CA05;
+  padding: 20px 15px 5px 30px;
+  line-height: normal;
+}
+
+.contentbox h5 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #F5CA05;
+  font-weight: 400;
+}
+
+.contentbox p {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+.regLink {
+  color: #4A4A4A;
+}
+
+.regLink:hover {
+  color: #927908;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+
+.summary {
+  font-size: 30px;
+}
+
+.footer {
+  height: 50px;
+}
+
+.banner {
+  background-color: #F5CA05;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.banner h3 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner h3 {
+    font-size: 28px;
+  }
+}
