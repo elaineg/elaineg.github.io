@@ -178,8 +178,87 @@
   text-align: center;
 }
 
+.banner2 {
+  background-color: #F5CA05;
+  height: 20em;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.banner2 h3 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+
+.carousel-caption h5 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #927908;
+}
+
+
+#pfp {
+  height: 30px;
+
+}
+
 @media only screen and (max-width: 767px) {
   .banner h3 {
     font-size: 28px;
   }
+
+  .banner2 h3 {
+    font-size: 16px;
+  }
+}
+
+/* Feature page styling */
+.featurepage {
+  background-color: #F5CA05;
+}
+
+.featurecontent {
+  padding-top: 80px;
+}
+
+.featurecontent .title h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.featurecontent .description h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  color: #927908;
+}
+
+.featurecontent .description p {
+  font-family: "Lora", serif;
+  font-size: 36px;
+}
+
+.examples {
+  height: 200px;
+  width: auto;
+  margin: 20px 20px;
+}
+
+.infographics {
+  height: 320px;
+  width: auto;
+  margin: 20px 20px;
+}
+
+.journey {
+  height: 400px;
 }
