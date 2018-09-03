@@ -261,4 +261,6 @@
 
 .journey {
   height: 400px;
+  width: auto;
+  margin: 20px 20px;
 }
